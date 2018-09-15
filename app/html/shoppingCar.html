@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/zuipin.ico">
+    <link rel="stylesheet" href="/css/shoppingCar.css">
+    <title>购物车</title>
+</head>
+<body>
+    <!-- head b-->
+    <header></header>
+    <!-- head e-->
+    
+    <!-- nav b-->
+    <nav></nav>
+    <!-- nav e-->
+    <!-- car b-->
+    <div id="car">
+        <div class="car_body center">
+            <table style="border-collapse:separate; border-spacing:0px 10px;">
+                <thead>
+                    <tr>
+                        <th>
+                            <input type='checkbox' class='all_change'/>全选
+                        </th>
+                        <th>
+                            商品名称
+                        </th>
+                        <th>价格</th>
+                        <th>数量</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr></tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <!-- tbody模板 b-->
+                <script type="text/html" id="tbody">
+                    {{each data curr index}}
+                        <tr id='{{curr.id}}'>
+                            <td><input type='checkbox' class='dan_change'/></td>
+                            <td class="tbody_pic">
+                                <div><img src="{{curr.img}}" alt=""></div>
+                                <div class='div2'>{{curr.desc1}}</div>
+                            </td>
+                            <td class="tbody_price">
+                                <span>￥</span>
+                                <span>{{curr.price}}</span>
+                            </td>
+                            <td class="tbody_amount">
+                                <button class="del">-</button>
+                                <input type="text" value="{{curr.amount}}" id='tex'/>
+                                <button class="add">+</button>
+                            </td>
+                            <td class="tbody_total_price">
+                                <span>￥</span>
+                                <span class="price">{{(curr.price*curr.amount).toFixed(2)}}</span>
+                            </td>
+                            <td class="shan">
+                                <a href="javascript:void(0)">x</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                </script>
+                <!-- tbody模板 e-->
+            </table>
+        </div>
+        <div class="car_foot center">
+            <ul>
+                <li class="total_amount">已选择<span></span>件商品</li>
+                <li class="sum_Price">
+                    总计（不含运费）：<span></span>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">去结算</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- car e-->
+    <!-- foot b-->
+    <footer></footer>
+    <!-- foot e-->
+    <!-- kefu b-->
+    <!-- <div id="kefu"></div> -->
+    <!-- kefu e-->
+    
+    <script src="/libs/require.js" data-main='/js/shoppingCar.js'></script>
+</body>
+</html>

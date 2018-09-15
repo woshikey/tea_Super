@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" href="/images/zuipin.ico">
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <!-- header b-->
+    <div class="header">
+        <div class="center">
+            <h1><a href="/index.html">醉品茶城</a></h1>
+        </div>
+    </div>
+    <!-- header e-->
+    <!-- login_box b-->
+    <div class="login_box">
+        <div class="center">
+            <div class="loginL fl">
+                <img src="/images/login/bg.jpg" alt="">
+            </div>
+            <div class="loginR fr">
+                <div class="login_type">
+                    <a href="javascript:void(0)" class="zhanghao fl orange">账号登录</a>
+                    <a href="javascript:void(0)" class="duanxin fl">短信登录</a>
+                </div>
+                <div class="login" id="login">
+                    <form class="zhanghao">
+                        <input type="text" placeholder="邮箱/手机号码" class="inp len1" id="phone1">
+                        <input type="password" placeholder="数字和字母组成6-16位密码" class="inp len1" id="paw">
+                        <p class="hint hint1"></p>
+                        <input type="submit" value="立刻登录" id="login1">
+                         <p class="forget">
+                            <a href="javascript:void(0)">注册醉品账号</a>
+                            <span>|</span>
+                            <a href="javascript:void(0)">忘记密码？</a>
+                         </p>
+                    </form>
+                    <form class="duanxin">
+                        <input type="text" placeholder="手机号码" class="tex len2 inp" id="phone2">
+                        <div class="check_pic clear" >
+                            <input type="text" placeholder="图片验证码" class="check len2 inp" id="pic">
+                            <img src="" alt="">
+                        </div>
+                        <div class="duanxin_pic clear">
+                            <input type="text" placeholder="短信验证码" class="check len2 inp" id="duanxin" disabled='true'>
+                            <span class="fr">获取验证码</span>
+                        </div>
+                        <p class="hint hint2"></p>
+                        <input type="submit" value="立刻登录" id="login2">
+                    </form>
+                </div>
+                <div class="other_login">
+                    <a href="javascript:void(0)"><img src="/images/login/zhifubao.png" alt=""></a>
+                    <a href="javascript:void(0)"><img src="/images/login/qq.png" alt=""></a>
+                    <a href="javascript:void(0)"><img src="/images/login/weixin.png" alt=""></a>
+                    <span>其他方式登录</span>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- login_box e-->
+    <!-- footer b-->
+    <footer></footer>
+    <!-- footer e-->
+    <script src="/libs/require.js" data-main='/js/login.js'></script>
+</body>
+</html>

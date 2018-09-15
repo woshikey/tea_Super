@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/images/zuipin.ico">
+    <link rel="stylesheet" href="/css/list.css">
+    <title>列表页</title>
+</head>
+
+<body>
+    <!-- head b-->
+    <header></header>
+    <!-- head e-->
+    <!-- nav b-->
+    <div id="nav"></div>
+    <!-- nav e-->
+    <!-- banner b-->
+    <div class="banner center">
+        <ul class="pic">
+            <li>
+                <a href="javascripit:void(0)"><img src="/images/list/lunbo1.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascripit:void(0)"><img src="/images/list/lunbo2.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascripit:void(0)"><img src="/images/list/lunbo3.jpg" alt=""></a>
+            </li>
+            <li>
+                <a href="javascripit:void(0)"><img src="/images/list/lunbo4.jpg" alt=""></a>
+            </li>
+        </ul>
+        <ul class="num">
+           <li class="currNum"><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+           <li><span></span></li>
+        </ul>
+    </div>
+    <!-- banner e-->
+    <!-- list_tilte b-->
+    <div class="list_tilte center">
+        <section>
+            <dl class="pinLei clear">
+                <dt>品&nbsp;&nbsp;类 :</dt>
+                <dd class="currA"><a href="javascript:void(0)">全部</a></dd>
+                <dd><a href="javascript:void(0)">安溪铁观音</a></dd>
+                <dd><a href="javascript:void(0)">武夷岩茶</a></dd>
+                <dd><a href="javascript:void(0)">台湾高山茶</a></dd>
+                <dd><a href="javascript:void(0)">广东单枞</a></dd>
+                <dd><a href="javascript:void(0)">漳平水仙</a></dd>
+                <dd><a href="javascript:void(0)">其他乌龙茶</a></dd>
+            </dl>
+            <dl class="clear">
+                <dt>品&nbsp;&nbsp;牌 :</dt>
+                <dd><a href="javascript:void(0)">全部</a></dd>
+                <dd><a href="javascript:void(0)">醉品朴茶</a></dd>
+                <dd><a href="javascript:void(0)">魏荫名茶</a></dd>
+                <dd><a href="javascript:void(0)">三和</a></dd>
+                <dd><a href="javascript:void(0)">冠和</a></dd>
+                <dd><a href="javascript:void(0)">其他品牌</a></dd>
+                <dd><a href="javascript:void(0)">浓韵汇</a></dd>
+                <dd><a href="javascript:void(0)">醉品叶界</a></dd>
+                <dd><a href="javascript:void(0)">一匠一品</a></dd>
+            </dl>
+            <dl class="clear">
+                <dt>净含量在 :</dt>
+                <dd><a href="javascript:void(0)">全部</a></dd>
+                <dd><a href="javascript:void(0)">501-1000克</a></dd>
+                <dd><a href="javascript:void(0)">251-500克</a></dd>
+                <dd><a href="javascript:void(0)">50克以下</a></dd>
+                <dd><a href="javascript:void(0)">50-100克</a></dd>
+                <dd><a href="javascript:void(0)">101-250克</a></dd>
+            </dl>
+            <dl class="clear">
+                <dt>等&nbsp;&nbsp;级 :</dt>
+                <dd><a href="javascript:void(0)">全部</a></dd>
+                <dd><a href="javascript:void(0)">特级</a></dd>
+                <dd><a href="javascript:void(0)">一级</a></dd>
+                <dd><a href="javascript:void(0)">二级</a></dd>
+            </dl>
+            <dl class="clear">
+                <dt>用&nbsp;&nbsp;途 :</dt>
+                <dd><a href="javascript:void(0)">全部</a></dd>
+                <dd><a href="javascript:void(0)">自饮</a></dd>
+                <dd><a href="javascript:void(0)">送礼（简装礼盒）</a></dd>
+                <dd><a href="javascript:void(0)">送礼（精装礼盒）</a></dd>
+            </dl>
+        </section>
+        <p class="snav clear">
+            <a href="javascript:void(0)">评论最多</a>
+            <a href="javascript:void(0)">价格<i></i></a>
+            <a href="javascript:void(0)">新品</a>
+            <a href="javascript:void(0)" class="snavA">销量</a>
+        </p>
+        <div class="toggle">
+            <img src="/images/list/point.jpg" alt="">
+        </div>
+    </div>
+    <!-- list_tilte e-->
+    <!-- list b-->
+    <div class="list center">
+        <ul class="list_ul clear">
+
+        </ul>
+        <!-- list模板 b-->
+            <script type="text/html" id="list">
+                {{each data curr index}}
+                    <li>
+		                <div class="list_pic" id={{curr.id}}>
+		                    <a href="/html/details.html?id={{curr.id}}"><img src="{{curr.img}}" alt=""></a>
+		                </div>
+		                <p class="desc1" title="{{curr.desc1}}">{{curr.desc1}}</p>
+		                <p class="desc2" title="{{curr.desc2}}">{{curr.desc2}}</p>
+		                <p class="price">￥<span>{{curr.price}}</span></p>
+		                <p class="haoping"><span>{{curr.people}}</span>人好评</p>
+		                <div class="add_shoppingCar"><a href="/html/details.html?id={{curr.id}}">加入购物车</a></div>
+            		</li>
+                {{/each}}
+            </script>
+        <!-- list模板 e-->
+        <div class="page_box">
+            <div class="show_page fl clear">
+                <button id="before">上一页</button>
+                <ul class="num">
+                    
+                </ul>
+                <button id="after">下一页</button>
+                <span></span>
+            </div>
+            <div class="to_page fl">
+                	到第<input type='text'/>页
+            </div>
+            <div class="sure fl">
+                <button>确定</button>
+            </div>
+        </div>
+    </div>
+    <!-- list e-->
+    <!-- foot b-->
+    <footer></footer>
+    <!-- foot e-->
+    <!-- kefu b-->
+    <div id="kefu"></div>
+    <!-- kefu e-->
+    <script src="/libs/require.js" data-main='/js/list.js'></script>
+</body>
+
+</html>

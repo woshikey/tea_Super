@@ -1,0 +1,160 @@
+@import 'base';
+.center{
+    width: 1227px;
+    margin-left: auto;
+    margin-right: auto;
+}
+//header
+.header{
+    height: 100px;
+    a{
+        display: block;
+        width: 292px;
+        height: 46px;
+        padding-top: 45px;
+        background: url('/images/login/logo.png') no-repeat center;
+        text-indent: -9999px;
+    }
+}
+//login_box
+.login_box{
+    height: 585px;
+    background-color: #af0000;
+    .loginR{
+        width: 381-62px;
+        height: 524-30px;
+        background-color: #fff;
+        margin-top: 30px;
+        padding-left: 31px;
+        padding-right: 31px;
+        padding-top: 30px;
+        .login_type{
+            height: 25px;
+            font-size: 16px;
+            text-align: center;
+            a{
+                width: 155px;
+                height: 25px;
+                line-height: 25px;
+            }
+            a.orange{
+                color: #ff3600;
+            }
+            .zhanghao{
+                border-right: 1px solid #e0e0e0;
+                color: #333;
+            }
+            .duanxin{
+                color: #333;
+            }
+        }
+        .login{
+            padding-top: 29px;
+            height: 350px;
+            .hint{
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                color: red;
+                font-weight: bold;
+            }
+            .zhanghao{
+                input{
+                    height: 44px;
+                    width: 100%;
+                }
+                .inp{
+                   border: 1px solid #cbcbcb;
+                   padding-left: 15px;
+                   box-sizing: border-box;
+                }
+                input[type='text']{
+                    margin-bottom: 15px;
+                }
+                input[type='submit']{
+                    background-color: #ddd;
+                    color: #fff;
+                    margin-bottom: 24px;
+                }
+                .forget{
+                    text-align: center;
+                    font-size: 12px;
+                   a{ 
+                       color: #999;
+                       &:hover{
+                           color: #ff3600;
+                       }
+                    }
+                   span{ 
+                       color: #999;
+                       margin-left: 4px;
+                       margin-right: 4px;
+                    }
+                }
+            }
+            .duanxin{
+                display: none;
+                input{
+                    border: 1px solid #cbcbcb;
+                    padding-left: 15px;
+                   box-sizing: border-box;
+                   height: 44px;
+                }
+                .tex{
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                .check{
+                    width: 196px;
+                    margin-right: 9px;
+                    float: left;
+                }
+                .check_pic{
+                    margin-bottom: 15px;   
+                    img{
+                        width: 107px;
+                        height: 44px;
+                        margin-left: 7px;
+                    }
+                }
+                span{
+                    width: 107px;
+                    height: 44px;
+                    text-align: center;
+                    line-height: 44px;
+                    background-color: #ddd;
+                    color: #fff;
+                }
+                input[type='submit']{
+                    background-color: #ddd;
+                    color: #fff;
+                    margin-bottom: 24px;
+                    width: 100%;
+                }
+            }
+        }
+       
+        .other_login{
+            border-top: 1px solid #e0e0e0;
+            height: 82px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            a:nth-child(2){
+                margin-left: 48px;
+                margin-right: 48px;
+            }
+            span{
+                position: absolute;
+                background-color: #fff;
+                top: -11px;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #bbb;
+            }
+        }
+    }
+}
+//footer
+@import 'foot';

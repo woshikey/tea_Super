@@ -1,0 +1,133 @@
+@import 'base';
+@import 'head';
+.center{
+    width: 1227px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#car{
+    background-color: #f5f5f5;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    .car_foot{
+        height: 72px;
+        line-height: 72px;
+        background-color: #fff;
+        ul>li{
+            float: left;
+            font-size: 12px;
+            color: #424242;
+            margin-left: 40px;
+            &.total_amount{
+                line-height: 84px;
+            }
+            &.total_amount span{
+                font-weight: bold;
+                color: #c00000;
+            }
+            &.sum_Price span{
+                font-size: 26px;
+                font-weight: bold;
+                color: #c00000;
+            }
+            &.sum_Price+li{
+                float: right;
+                a{
+                    display: inline-block;
+                    width: 200px;
+                    height: 72px;
+                    background-color: #ff3600;
+                    color: #fff;
+                    font-size: 18px;
+                    text-align: center;
+                    line-height: 72px;
+                }
+            } 
+        }
+    }
+    .car_body{ 
+        table{
+            width: 100%;
+        }
+        thead{
+            height: 77px;
+            line-height: 77px;
+            background-color: #fff;
+            border-bottom: 2px solid #ccc;
+            tr th:nth-child(1){
+                width: 8.4%;
+            }
+            tr th:nth-child(2){
+                width: 46.8%;
+            }
+            tr th:nth-child(3){
+                width: 13.5%;
+            }
+            tr th:nth-child(4){
+                width: 13.7%;
+            }
+            tr th:nth-child(5){
+                width: 10.1%;
+            }
+            tr th:nth-child(6){
+                width: 7.3%;
+            }
+        }
+        tbody{
+            background-color: #fff8f0;
+            text-align: center;
+            font-size: 13px;
+            .tbody_pic{
+                div{float: left;}
+                div.div2{
+                    line-height: 72px;
+                }
+                color: #ccc;
+                img{
+                    width: 70px;
+                    height: 70px;
+                    margin-right: 30px;
+                }
+            }
+            .tbody_price{
+                color: #333;
+            }
+            .tbody_amount{
+                button{
+                    width: 20px;
+                    height: 32px;
+                    text-align: center;
+                    color: #666;
+                    cursor: pointer;
+                    font-size: 14px;
+                    background: #fff;
+                    border: 1px solid #aaa;
+                    box-sizing: border-box;
+                    padding: 0 5px;
+                }
+                input{
+                    width: 42px;
+                    height: 28px;
+                    line-height: 28px;
+                    color: #666;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+            .tbody_total_price{
+                color: #c00000;
+            }
+            .shan a{
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                background-color: #ff4500;
+                color: #fff;
+            }
+        }
+    }
+}
+@import 'foot';
+@import 'nav';
+@import 'kefu';

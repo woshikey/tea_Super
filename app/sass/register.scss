@@ -1,0 +1,128 @@
+@import 'base';
+.center{
+    width: 1227px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: #f5f5f5;
+}
+//header
+.header{
+    height: 100px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    h1 a{
+        display: block;
+        width: 292px;
+        height: 46px;
+        background: url('/images/login/logo.png') no-repeat center;
+        text-indent: -9999px;
+        margin-top: 34px;
+    }
+    .fr{
+        line-height: 100px;
+        font-size: 16px;
+        color: #999;
+        width: 144px;
+        margin-right: 4px;
+        background: url('/images/register/dayu.jpg') no-repeat right center;
+        a{
+            color: #333;
+        }
+    }
+}
+//content
+.content_box{
+    height: 621px;
+    background-color: #fff;
+    padding-top: 62px;
+    .content{
+        width: 393px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        .xieYi{
+            color: #adadad;
+            font-size: 12px;
+            a{
+                color: #333;
+                &:hover{
+                    color: #ff3600;
+                }
+            }
+        }
+        input{
+            border: 1px solid #cbcbcb;
+            box-sizing: border-box;
+            padding-left: 14px;
+            font-size: 12px;
+        }
+        .p_title{
+            height: 65px;
+            padding-top: 15px;
+            padding-left: 63px;
+            background: url('/images/register/tu1.jpg') no-repeat 1px 0;
+            font-size: 19px;
+            span{
+                color: #ff3600;
+            }
+        }
+        .inp{
+            width: 100%;
+            height: 46px;
+            margin-bottom: 20px;
+        }
+        .check{
+            width: 228px;
+            height: 46px;
+            float: left;
+        }
+        .check+img{
+            width: 153px;
+            height: 48px;
+            margin-left: 12px;
+        }
+        .check+span{
+            text-align: center;
+            line-height: 48px;
+            width: 152px;
+            height: 48px;
+            background-color: #adadad;
+            color: #fff;
+            cursor: pointer;
+        }
+        .hint{
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: red;
+            font-weight: bold;
+        }
+        input[type='submit']{
+            width: 100%;
+            height: 50px;
+            font-size: 15px;
+            color: #adadad;
+            margin-bottom: 14px;
+        }
+        input[type='submit']+p{
+            font-size: 12px;
+            color: #adadad;
+            a{
+                color: #333;
+            }
+        }
+        .check_pic{
+            margin-bottom: 20px;
+        }
+    }
+}
+// foot
+.foot{
+    font-size: 13px;
+    color: #999;
+    padding-top: 35px;
+    height: 43px;
+    text-align: center;
+}

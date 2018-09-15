@@ -1,0 +1,248 @@
+@import 'base';
+.center{
+    width: 1227px;
+    margin-left: auto;
+    margin-right: auto;
+}
+//head
+@import 'head';
+//nav
+@import 'nav';
+//page_details
+.page_details{
+    height: 40px;
+    background-color: #f5f5f5;
+    font-size: 12px;
+    line-height: 40px;
+    a{
+        float: left;
+        color: #b0b0b0;
+    }
+    span{
+        float: left;
+        color: #b0b0b0;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+}
+//goods
+.goods{
+    border-bottom: 2px solid #ccc;
+    .goodsPic{
+        width: 673px;
+        height: 546px;
+        .goods_spic{
+            width: 75px;
+            height: 440px;
+            padding-top: 60px;
+            margin-right: 90px;
+            button{
+                width: 73px;
+                height: 20px;
+                border: 1px solid #ccc;
+                cursor: pointer;
+            } 
+            .shang{
+                background: #f0f0f0 url('/images/details/jiantouT.jpg') no-repeat center;
+            }
+            .xia{
+                background: #f0f0f0 url('/images/details/jiantouB.jpg') no-repeat center;
+            }
+            .pic{
+                margin-top: 6px;
+                margin-bottom: 6px;
+                height: 374px;
+                overflow-y: hidden;
+                ul{
+                    height: 850px;
+                    li{
+                        box-sizing: border-box;
+                        padding-bottom: 16px;
+                        img{
+                            width: 72px;
+                            height: 62px;
+                            border-left: 1px solid #ccc;
+                            border-right: 1px solid #ccc;
+                        }
+                    }
+                    li.currLi img{
+                        border-color: #ff3600;
+                    }
+                }
+            }
+        }
+        .goods_bpic{
+            li{
+                display: none;
+                img{width: 480px;}
+            }
+            li.currImg{display: block}
+        }
+    }
+    .goodsDescribe{
+        dt,dd{float: left;}
+        h3{
+            height: 113-38px;
+            border-bottom: 1px solid #ccc;
+            font-size: 20px;
+            padding-top: 38px;
+            margin-bottom: 20px;
+            span{
+                font-size: 12px;
+                font-weight: normal;
+                color: #666;
+                display: block;
+                margin-top: 24px;
+            }
+        }
+        .tong_Dt{
+            color: #ccc;
+            margin-right: 43px;
+            font-size: 12px;
+        }
+        .tong_Dt+dd{font-size: 12px;}
+        .shiCangJia{
+            margin-bottom: 26px;
+            dd{
+                color: #666;
+            }
+        }
+        .zuiPinJia{
+            margin-bottom: 24px;
+            dd{
+                color: #b60005;
+                strong{
+                    font-size: 17px;
+                }
+            }
+        }
+        .cuXiao{
+            margin-bottom: 18px;
+            dd{
+                p span{float: left; font-size: 12px;}
+                .span_one{
+                    width: 36px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    color: #ff3600;
+                    border: 1px solid #ff0000;
+                    margin-right: 5px;
+                    margin-bottom: 7px;
+                }
+                .span_one+span{
+                    color: #333;
+                }
+            }
+        }
+        .sDesc{
+            height: 52px;
+            line-height: 52px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            font-size: 12px;
+            dt{
+                color: #ccc;
+                margin-right: 45px;
+            }
+            dd{
+                color: #333;
+                margin-right: 20px;
+            }
+        }
+        .amount{
+            height: 62px;
+            dt{
+                color: #ccc;
+                margin-right: 45px;
+                line-height: 62px;
+            }
+            dd{
+                margin-top: 17px;
+                a{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 16px;
+                    text-align: center;
+                    line-height: 26px;
+                    height: 26px;
+                    border: 1px solid #707070;
+                    border-radius: 1px;
+                    background-color: #ececec;
+                    color: #000;
+                }
+                input{
+                    width: 44px;
+                    height: 26px;
+                    border: 1px solid #e2e3ea;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    text-align: center;
+                    color: #000;
+                }
+            }
+        }
+        .shoppingCar{
+            width: 266px;
+            height: 50px;
+            background: #ff3600 url('/images/details/shoppingCar.png') no-repeat 59px center;
+            text-align: center;
+            line-height: 50px;
+            color: #e9e9e9;
+            margin-bottom: 16px;
+        }
+        .miaoShu{
+            height: 49px;
+            line-height: 49px;
+            border-top:1px solid #ccc;
+            font-size: 12px;
+            color: #ccc;
+            span:first-child{
+                margin-right: 46px;
+            }
+            span:nth-child(3){
+               margin-left: 21px;
+               margin-right: 21px;
+            }
+        }
+    }
+}
+//ss_nav
+.ss_nav{
+    height: 58px;
+    line-height: 58px;
+    font-size: 12px;
+    a{
+        float: left;
+        text-align: center;
+        width: 303px;
+        height: 58px;
+        background: url('/images/details/shu.jpg') no-repeat right center;
+        color: #666;
+    }
+}
+//pic_box
+.pic_box{
+    background-color: #f5f5f5;
+    padding-top: 15px;
+    .center{
+        background-color: #fff;
+        padding-top: 45px;
+        .pic_head{
+            margin-left: 60px;
+            li{
+                float: left;
+                font-size: 12px;
+                color: #333;
+                width: 368px;
+                margin-bottom: 20px;
+            }
+        }
+        .pic{text-align: center}
+    }
+}
+//kefu
+@import 'kefu';
+//foot
+@import 'foot';
+

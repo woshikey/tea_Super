@@ -1,0 +1,36 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form,img, div,input,a{ 
+	margin:0; padding:0; 
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}
+input{
+	border: 0;
+	outline-style: none;
+}
+button{
+	outline-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear:after{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.clear{
+	zoom: 1;
+}

@@ -1,0 +1,105 @@
+// nav
+.nav_box{
+    background-color: #fff;
+}
+.nav {
+    height: 64px;
+    & > div {
+      float: left;
+    }
+    .all_classify {
+      width: 234px;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      h2 {
+        font-size: 15px;
+        background: url('/images/index/three_gang.png') no-repeat 8px center;
+        height: 100%;
+        padding-left: 28px;
+        color: #333;
+        line-height: 64px;
+      }
+        .list1 {
+            z-index: 50;
+            background-color: #fff;
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            left: 0;
+            top: 64px;
+            padding-top: 24px;
+            padding-left: 20px;
+            border: 2px solid #ff3600;
+            display: none;
+            section{
+                position: absolute;
+                display: none;
+                width: 320px;
+                height: 461px;
+                left: 231px;
+                top: 0;
+                background-color: #fff;
+                ul{
+                    li{
+                      float: left;
+                      width: 133px;
+                      padding: 20px 0 20px 27px;
+                      a{
+                        font-size: 12px;
+                        color: #444;
+                      }
+                      a:hover{
+                        color: #ff3600;
+                      }
+                      img{
+                        width: 35%;
+                      }
+                    }
+                }
+            }
+            dl {
+                height: 52px;
+                &:hover section{
+                    display: block;
+                }
+                dt, dd {
+                    float: left;
+                }
+                dt {
+                    font-size: 15px;
+                    color: #333;
+                    width: 64px;
+                }
+                dd {
+                    a {
+                    font-size: 12px;
+                    color: #787878;
+                    line-height: 14px;
+                    float: left;
+                    }
+                    .list_one, .list_three {
+                    width: 60px;
+                    margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .all_classify:hover .list1{
+        display: block;
+    }
+    .sNav {
+      padding-left: 13px;
+      line-height: 64px;
+      li {
+        float: left;
+        margin-right: 51px;
+        font-size: 12px;
+        a {
+          color: #333;
+        }
+      }
+    }
+  }
+ 
