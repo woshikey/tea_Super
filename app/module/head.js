@@ -1,10 +1,11 @@
 define(function(){
     $('header').load('/html/head.html',function(){
-        $.cookie.json = true;
+      
         //拿到cookie的username
         const name = $.cookie('username');
         //拿到cookie的products数据渲染购物车
         const products = $.cookie('products');
+        $.cookie.json = true;
         if(name){
             let html = `<span>欢迎你，${name}</span>`;
             $('#user').html(html);

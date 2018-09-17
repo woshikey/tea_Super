@@ -81,15 +81,28 @@ require(['config'],function(){
             _tr.find('.price').html(vel*danJia)
             total();
         })
+        // 点击全选
+       
+        $('.all_change').on('click',function(){
+            var bool = $(this).prop('checked');
+            $('.dan_change').prop('checked',bool);
+            total()
+        })
+        //点击单选
+        $('tbody').on('click','.dan_change',function(){
+            var dan_change_Len = $('.dan_change').length;
+            var xuan_zhong = $('.dan_change:checked').length;
+            var bool = dan_change_Len == xuan_zhong;
+            $('.all_change').prop('checked',bool);
+            total()
+        })
         //封装计算总数量和总价的函数
         function total(){
             var totalNum = 0,totalAmount = 0;
-            $('tbody #tex').each(function(index,curr){
-                totalNum += parseFloat($(this).val()) 
-            });
-            $('.tbody_total_price .price').each(function(index,curr){
-                totalAmount += parseFloat($(this).html()) 
-            });
+            $('.dan_change:checked').each(function(index,curr){
+                totalNum+=parseInt($(curr).parents('tr').find('#tex').val());
+                totalAmount+=parseInt($(curr).parents('tr').find('.price').text());
+            })
             $('.total_amount span').html(totalNum);
             $('.sum_Price span').html("￥"+totalAmount);
         }
